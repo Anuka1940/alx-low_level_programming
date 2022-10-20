@@ -1,22 +1,13 @@
-#include "main.h"
+int _isalpha(int c) 
 
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int r;
+    {
+        int i = c;
 
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+    if  ((i >= 65 && i <= 90)||(i >=97 && i <= 122))
+        return (1);
+    
+    else 
+        return (0);
+
+
 }
