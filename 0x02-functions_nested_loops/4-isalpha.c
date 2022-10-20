@@ -6,7 +6,6 @@
 *
 *Return: return (1) for lowercase or upercase esle return (0)
 */
-
 int _isalpha(int c) 
 
     {
