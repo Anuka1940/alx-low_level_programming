@@ -1,3 +1,12 @@
+/**
+*_isalpha -this check for alphabets only
+*@parameters:it accept one character int
+*
+*Description: check if variable is either lowercase or upercase
+*
+*Return: return (1) for lowercase or upercase esle return (0)
+*/
+
 int _isalpha(int c) 
 
     {
