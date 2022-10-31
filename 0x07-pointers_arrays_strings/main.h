@@ -1,3 +1,4 @@
+#define NULL 0
 int _isupper(int c);
 int mul(int a, int b);
 void print_most_numbers(void);
@@ -10,3 +11,4 @@ void _puts(char *str);
 void print_rev(char *s);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
+ char *_strchr(char *s, char c);
