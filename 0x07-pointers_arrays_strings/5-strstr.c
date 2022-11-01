@@ -10,7 +10,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j, k, len, count;
-	char *null = "(null)";
 
 	i = 0;
 	k = 0;
@@ -38,5 +37,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		i++;
 	}
-	return (null);
+	return (NULL);
 }
