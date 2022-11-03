@@ -3,8 +3,9 @@
  *_print_rev_recursion- prints string on string
  *@s: pointer a *
  *
- */
-void _print_rev_recursion (char *s)
+*/
+
+void _print_rev_recursion(char *s)
 {
 	int i = 1;
 
@@ -13,6 +14,6 @@ void _print_rev_recursion (char *s)
 		return;
 		_putchar ('\n');
 	}
-	_print_rev_recursion (s + i);
+	_print_rev_recursion(s + i);
 	_putchar (*s);
 }
