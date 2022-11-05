@@ -8,9 +8,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int n = argc - 1;
+	int count = 0, k, i;
 
-	_putchar(n + '0');
+	for (i = 0; i < argc; i++)
+	{
+		k = 0;
+		while ( argv[i][k] != '\0')
+		{
+			k++;
+		}
+		count++;
+	}
+	_putchar(count - 1+ '0');
 	_putchar('\n');
 	return (0);
 }
