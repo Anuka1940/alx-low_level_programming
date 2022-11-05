@@ -19,8 +19,9 @@ int _putchar(char c)
  */
 int main(int argc, char *argv[])
 {
+	int n = argc - 1;
 
-	_putchar(argc + '0');
+	_putchar(n + '0');
 	_putchar('\n');
 	return (0);
 }
