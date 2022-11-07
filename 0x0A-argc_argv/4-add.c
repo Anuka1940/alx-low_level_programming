@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	if (argc <= 1)
 	{
 		printf("%d\n", 0);
-		return (-1);
+		return (1);
 	}
 	for (; i < argc; i++)
 	{
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 			if (argv[i][j] < 42 || argv[i][j] > 57)
 				{
 				printf("error\n");
-				return (-1);
+				return (1);
 			}
 		}
 		sum += atoi(argv[i]);
