@@ -10,9 +10,19 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *p1, *p2 = s1, *p3 = s2;
+	char *p1, *p2, *p3;
 	unsigned int i, j, k;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	p2 = s1;
+	p3 = s2;
 	p1 = malloc(sizeof(char) * (strlen(s1) + strlen(s2)) + 1);
 	if (p1 == NULL)
 	{
