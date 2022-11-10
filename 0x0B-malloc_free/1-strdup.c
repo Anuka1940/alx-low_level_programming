@@ -13,6 +13,10 @@ char *_strdup(char *str)
 	int i, j;
 
 	p1 = malloc(sizeof(char) * strlen(str));
+	if (str == NULL)
+	{
+		return(NULL);
+	}
 	if (p1 == NULL)
 	{
 		return (NULL);
