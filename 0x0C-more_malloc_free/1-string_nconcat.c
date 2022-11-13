@@ -21,10 +21,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	i = 0, j = 0;
 	while (p2[j] != '\0')
 	{
