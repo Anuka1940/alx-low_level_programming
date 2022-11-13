@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *str_concat- concantinate two strings
+ *string_nconcat- concantinate two strings
  *@s1: pointer to string one
  *@s2: pointer to string two
  *@n: size of n byte
@@ -14,14 +14,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p1, *p2, *p3;
 	unsigned int i, j, k;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	p2 = s1;
 	p3 = s2;
 	p1 = malloc(sizeof(char) * (strlen(s1) + strlen(s2)) + 1);
