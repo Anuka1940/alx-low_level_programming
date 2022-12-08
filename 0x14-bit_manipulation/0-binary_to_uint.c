@@ -26,7 +26,7 @@ unsigned int expo(unsigned int base, int power)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int power = strlen(b) - 1, i = 0;
+	int power = 0, i = 0;
 	unsigned int unit = 0;
 
 	if (b == NULL)
@@ -36,7 +36,9 @@ unsigned int binary_to_uint(const char *b)
 		if ((b[i] != '1' && b[i] != '0'))
 			return (0);
 		i++;
+		power++;
 	}
+	power -= 1;
 	i = 0;
 	while (b[i] != '\0')
 	{
