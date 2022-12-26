@@ -25,6 +25,6 @@ void print_binary(unsigned long int n)
 				printf("0");
 		}
 	}
-	if (count == 0)
+	if (n == 0)
 		printf("0");
 }
