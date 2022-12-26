@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  *set_bit- change index of a byte
  *@n: address of a pointer
