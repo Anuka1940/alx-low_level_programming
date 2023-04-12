@@ -32,10 +32,11 @@ unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 hash_node_t *new_item(const char *key, const char *value);
-void handle_collision(hash_table_t* table, hash_node_t* item);
+void hash_table_print(const hash_table_t *ht);
+char *hash_table_get(const hash_table_t *ht, const char *key);
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #define TRUE 1
-#define FALSE 0
+#define FALSE 0 hash_table_t
