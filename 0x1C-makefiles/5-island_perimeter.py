@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+"""module for technical interview"""
+
 
 def island_perimeter(grid):
     """
-    calculates the perimeter of the island described in the grid    """
+    calculates the perimeter of the island described in the grid
+    """
     perimeter = 0
     rows = len(grid)
     cols = len(grid[0])
@@ -16,5 +19,4 @@ def island_perimeter(grid):
                     perimeter -= 2
                 if j > 0 and grid[i][j - 1] == 1:
                     perimeter -= 2
-
     return perimeter
